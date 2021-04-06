@@ -5,13 +5,14 @@ public class GameUnit {
     private int healthPoint;
     private int manaPoint;
     private double armorPoint;
-
+    private  int damage;
     public GameUnit(){}
 
-    public GameUnit(int healthPoint, int manaPoint, double armorPoint) {
+    public GameUnit(int healthPoint, int manaPoint, double armorPoint , int damage) {
         this.healthPoint = healthPoint;
         this.manaPoint = manaPoint;
         this.armorPoint = armorPoint;
+        this.damage = damage;
     }
 
     public int getHealthPoint() {
@@ -23,6 +24,9 @@ public class GameUnit {
     public double getArmorPoint() {
         return armorPoint;
     }
+    public int getdamage() {
+        return damage;
+    }
 
     public void setHealthPoint(int healthPoint) {
         this.healthPoint = healthPoint;
@@ -33,5 +37,8 @@ public class GameUnit {
 
     public void setManaPoint(int manaPoint) {
         this.manaPoint = manaPoint;
+    }
+    public void setDamage(int damage) {
+        this.damage = damage;
     }
 }

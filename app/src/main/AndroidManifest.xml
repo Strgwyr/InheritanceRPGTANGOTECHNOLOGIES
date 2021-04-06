@@ -9,7 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.InheritanceRPGTANGOTECHNOLOGIES">
-        <activity android:name=".view.ProtectorFight"></activity>
+        <activity android:name=".view.RegeneratorFight"></activity>
+        <activity android:name=".view.SaviorFight" />
+        <activity android:name=".view.HardCarryFight" />
+        <activity android:name=".view.BurstFight" />
+        <activity android:name=".view.DisablerFight" />
+        <activity android:name=".view.WizardFight" />
+        <activity android:name=".view.SetterFight" />
+        <activity android:name=".view.ProtectorFight" />
         <activity android:name=".view.Select" />
         <activity android:name=".MainActivity">
             <intent-filter>

@@ -9,45 +9,46 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.inheritancerpgtangotechnologies.R;
+import com.example.inheritancerpgtangotechnologies.controller.Carry.Burst;
+import com.example.inheritancerpgtangotechnologies.controller.Healer.Savior;
 import com.example.inheritancerpgtangotechnologies.controller.Monster;
-import com.example.inheritancerpgtangotechnologies.controller.Tank.Protector;
 
-public class ProtectorFight extends AppCompatActivity implements View.OnClickListener {
+public class SaviorFight extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_protector_fight);
+        setContentView(R.layout.activity_savior_fight);
 
-      Protector protector = new Protector(2000, 500, 127);
-        Monster roshan = new Monster(5000, 1000,127);
+
+        Savior savior = new Savior(1300, 1000, 100);
+        Monster roshan = new Monster(5000, 1000, 127);
 
 
         TextView txtHeroHP = findViewById(R.id.heroHp);
         TextView txtHeromana = findViewById(R.id.heroMana);
         TextView txtHerodamage = findViewById(R.id.herodamage);
         TextView txtroshan = findViewById(R.id.roshanhp);
-        Button back = findViewById(R.id.back5);
+        Button back = findViewById(R.id.back);
         back.setOnClickListener(this);
 
 
-        txtHeroHP.setText(Integer.toString(protector.getHealthPoint()));
-      txtHeromana.setText(Integer.toString(protector.getManaPoint()));
-        txtHerodamage.setText(Integer.toString(protector.getdamage()));
+        txtHeroHP.setText(Integer.toString(savior.getHealthPoint()));
+        txtHeromana.setText(Integer.toString(savior.getManaPoint()));
+        txtHerodamage.setText(Integer.toString(savior.getdamage()));
         txtroshan.setText(Integer.toString(roshan.getHealthPoint()));
-
-
     }
 
     @Override
     public void onClick(View v) {
 
-        Intent back = new Intent(ProtectorFight.this, Select.class
+
+        Intent back = new Intent(SaviorFight.this, Select.class
         );
         startActivity(back);
 
         switch (v.getId()) {
-            case R.id.back5:
+            case R.id.protectorb:
                 startActivity(back);
         }
     }

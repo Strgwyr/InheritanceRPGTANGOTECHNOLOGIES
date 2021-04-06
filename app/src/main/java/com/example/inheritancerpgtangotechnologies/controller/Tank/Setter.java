@@ -20,9 +20,14 @@ public class Setter extends Hero {
     int damage = 137;
 
 
-    public Setter() {
-    }
+    public Setter(int healthPoint, int manaPoint, int damage) {
+        setHealthPoint(healthPoint);
+        setManaPoint(manaPoint);
+        setDamage(damage);
+        this.damage = damage;
+        this.healthPoint = healthPoint;
+        this.manaPoint = manaPoint;
+        this.damage = damage;
 
-    public Setter(int heroId, String heroName, int healthPoint, int manaPoint, int damage) {
     }
 }

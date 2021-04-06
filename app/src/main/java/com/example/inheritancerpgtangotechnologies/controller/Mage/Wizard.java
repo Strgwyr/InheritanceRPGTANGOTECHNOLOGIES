@@ -2,26 +2,31 @@ package com.example.inheritancerpgtangotechnologies.controller.Mage;
 
 import com.example.inheritancerpgtangotechnologies.controller.Hero;
 
-public class Wizard extends Hero {
+public class Wizard  extends Hero {
 
-    public int healthPoint = 800;
-    public int manaPoint = 2000;
-    public double armorPoint = 5.0;
-    int heroId = 4;
-    String heroName = "Wizard";
-    int heroLevel = 25;
-    int heroSTR = 10;
-    int heroAGI = 17;
-    int heroINT = 32;
-    int heroToughness = 10;
-    int heroEvasion = 5;
-    int heroLuck = 2;
-    int damage = 102;
+    public int healthPoint;
+    public int manaPoint;
+    public double armorPoint;
+    int heroId;
+    String heroName;
+    int heroLevel;
+    int heroSTR;
+    int heroAGI;
+    int heroINT5;
+    int heroToughness;
+    int heroEvasion;
+    int heroLuck;
+    int damage = 120;
 
 
-    public Wizard() {
-    }
+    public Wizard(int healthPoint, int manaPoint, int damage) {
+        setHealthPoint(healthPoint);
+        setManaPoint(manaPoint);
+        setDamage(damage);
+        this.damage = damage;
+        this.healthPoint = healthPoint;
+        this.manaPoint = manaPoint;
+        this.damage = damage;
 
-    public Wizard(int heroId, String heroName, int healthPoint, int manaPoint, int damage) {
     }
 }

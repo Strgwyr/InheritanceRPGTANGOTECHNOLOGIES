@@ -7,15 +7,83 @@
     tools:context=".view.Select">
 
     <Button
+        android:id="@+id/burstb"
+        android:layout_width="102dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="16dp"
+        android:text="Burst"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.933" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="184dp"
+        android:text="Carry Class"
+        app:layout_constraintEnd_toEndOf="@+id/setterb"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="@+id/protectorb"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/saviorb"
+        android:layout_width="102dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="168dp"
+        android:text="Savior"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/setterb"
+        app:layout_constraintTop_toTopOf="@+id/setterb" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="184dp"
+        android:text="Healer Class"
+        app:layout_constraintEnd_toEndOf="@+id/wizardb"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="@+id/disablerb"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/hardcarryb"
+        android:layout_width="102dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="168dp"
+        android:text="Hard Carry"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/protectorb"
+        app:layout_constraintTop_toTopOf="@+id/protectorb" />
+
+    <Button
+        android:id="@+id/regeneratorb"
+        android:layout_width="102dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="168dp"
+        android:text="Regenerator"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/disablerb"
+        app:layout_constraintTop_toTopOf="@+id/disablerb" />
+
+    <Button
         android:id="@+id/protectorb"
         android:layout_width="102dp"
         android:layout_height="89dp"
         android:layout_marginStart="16dp"
         android:text="Protector"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.276" />
+        app:layout_constraintVertical_bias="0.227" />
 
     <Button
         android:id="@+id/wizardb"
@@ -23,6 +91,7 @@
         android:layout_height="89dp"
         android:layout_marginStart="48dp"
         android:text="Wizard"
+        android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@+id/disablerb"
         app:layout_constraintTop_toTopOf="@+id/disablerb" />
 
@@ -32,6 +101,7 @@
         android:layout_height="89dp"
         android:layout_marginStart="44dp"
         android:text="Setter"
+        android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@+id/protectorb"
         app:layout_constraintTop_toTopOf="@+id/protectorb" />
 
@@ -41,6 +111,7 @@
         android:layout_height="89dp"
         android:layout_marginStart="128dp"
         android:text="Disabler"
+        android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@+id/setterb"
         app:layout_constraintTop_toTopOf="@+id/setterb" />
 
@@ -48,11 +119,33 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="8dp"
         android:text="Choose a character"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.479"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Tank Class"
+        app:layout_constraintEnd_toEndOf="@+id/setterb"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="@+id/protectorb"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Mage Class"
+        app:layout_constraintEnd_toEndOf="@+id/wizardb"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="@+id/disablerb"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,17 +9,18 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.inheritancerpgtangotechnologies.R;
+import com.example.inheritancerpgtangotechnologies.controller.Mage.Disabler;
+import com.example.inheritancerpgtangotechnologies.controller.Mage.Wizard;
 import com.example.inheritancerpgtangotechnologies.controller.Monster;
-import com.example.inheritancerpgtangotechnologies.controller.Tank.Protector;
 
-public class ProtectorFight extends AppCompatActivity implements View.OnClickListener {
+public class DisablerFight extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_protector_fight);
+        setContentView(R.layout.activity_disabler_fight);
 
-      Protector protector = new Protector(2000, 500, 127);
+        Disabler disabler = new Disabler(1400, 1600, 90);
         Monster roshan = new Monster(5000, 1000,127);
 
 
@@ -27,13 +28,13 @@ public class ProtectorFight extends AppCompatActivity implements View.OnClickLis
         TextView txtHeromana = findViewById(R.id.heroMana);
         TextView txtHerodamage = findViewById(R.id.herodamage);
         TextView txtroshan = findViewById(R.id.roshanhp);
-        Button back = findViewById(R.id.back5);
+        Button back = findViewById(R.id.back3);
         back.setOnClickListener(this);
 
 
-        txtHeroHP.setText(Integer.toString(protector.getHealthPoint()));
-      txtHeromana.setText(Integer.toString(protector.getManaPoint()));
-        txtHerodamage.setText(Integer.toString(protector.getdamage()));
+        txtHeroHP.setText(Integer.toString(disabler.getHealthPoint()));
+        txtHeromana.setText(Integer.toString(disabler.getManaPoint()));
+        txtHerodamage.setText(Integer.toString(disabler.getdamage()));
         txtroshan.setText(Integer.toString(roshan.getHealthPoint()));
 
 
@@ -42,12 +43,12 @@ public class ProtectorFight extends AppCompatActivity implements View.OnClickLis
     @Override
     public void onClick(View v) {
 
-        Intent back = new Intent(ProtectorFight.this, Select.class
+        Intent back = new Intent(DisablerFight.this, Select.class
         );
         startActivity(back);
 
         switch (v.getId()) {
-            case R.id.back5:
+            case R.id.back3:
                 startActivity(back);
         }
     }

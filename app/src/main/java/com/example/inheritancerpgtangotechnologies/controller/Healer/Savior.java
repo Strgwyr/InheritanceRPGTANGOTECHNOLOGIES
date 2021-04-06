@@ -1,8 +1,8 @@
-package com.example.inheritancerpgtangotechnologies.controller.Mage;
+package com.example.inheritancerpgtangotechnologies.controller.Healer;
 
 import com.example.inheritancerpgtangotechnologies.controller.Hero;
 
-public class Disabler extends Hero {
+public class Savior extends Hero {
 
     public int healthPoint;
     public int manaPoint;
@@ -16,17 +16,18 @@ public class Disabler extends Hero {
     int heroToughness;
     int heroEvasion;
     int heroLuck;
-    int damage;
+    int damage = 120;
 
 
-    public Disabler(int healthPoint, int manaPoint, int damage) {
+
+    public Savior( int healthPoint, int manaPoint, int damage) {
         setHealthPoint(healthPoint);
         setManaPoint(manaPoint);
         setDamage(damage);
         this.damage = damage;
-        this.healthPoint = healthPoint;
-        this.manaPoint = manaPoint;
-        this.damage = damage;
+        this.healthPoint =     healthPoint;
+        this.manaPoint =     manaPoint;
+        this.damage =     damage;
 
     }
 }
