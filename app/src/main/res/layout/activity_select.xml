@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/dot_bg"
     tools:context=".view.Select">
 
     <Button
@@ -12,7 +13,8 @@
         android:layout_height="89dp"
         android:layout_marginStart="16dp"
         android:text="Burst"
-        android:textSize="12sp"
+        android:fontFamily="@font/heroes_legend"
+        android:textSize="8sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -23,7 +25,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="184dp"
+        android:fontFamily="@font/heroes_legend"
         android:text="Carry Class"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="@+id/setterb"
         app:layout_constraintHorizontal_bias="0.474"
         app:layout_constraintStart_toStartOf="@+id/protectorb"
@@ -36,7 +41,8 @@
         android:layout_marginStart="128dp"
         android:layout_marginTop="168dp"
         android:text="Savior"
-        android:textSize="12sp"
+        android:fontFamily="@font/heroes_legend"
+        android:textSize="8sp"
         app:layout_constraintStart_toEndOf="@+id/setterb"
         app:layout_constraintTop_toTopOf="@+id/setterb" />
 
@@ -46,6 +52,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="184dp"
         android:text="Healer Class"
+        android:fontFamily="@font/heroes_legend"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="@+id/wizardb"
         app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="@+id/disablerb"
@@ -57,8 +66,10 @@
         android:layout_height="89dp"
         android:layout_marginStart="44dp"
         android:layout_marginTop="168dp"
+        android:fontFamily="@font/heroes_legend"
+        android:lineSpacingExtra="8sp"
         android:text="Hard Carry"
-        android:textSize="12sp"
+        android:textSize="8sp"
         app:layout_constraintStart_toEndOf="@+id/protectorb"
         app:layout_constraintTop_toTopOf="@+id/protectorb" />
 
@@ -68,8 +79,9 @@
         android:layout_height="89dp"
         android:layout_marginStart="48dp"
         android:layout_marginTop="168dp"
+        android:fontFamily="@font/heroes_legend"
         android:text="Regenerator"
-        android:textSize="10sp"
+        android:textSize="5sp"
         app:layout_constraintStart_toEndOf="@+id/disablerb"
         app:layout_constraintTop_toTopOf="@+id/disablerb" />
 
@@ -78,8 +90,9 @@
         android:layout_width="102dp"
         android:layout_height="89dp"
         android:layout_marginStart="16dp"
+        android:fontFamily="@font/heroes_legend"
         android:text="Protector"
-        android:textSize="12sp"
+        android:textSize="6sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -91,7 +104,8 @@
         android:layout_height="89dp"
         android:layout_marginStart="48dp"
         android:text="Wizard"
-        android:textSize="12sp"
+        android:fontFamily="@font/heroes_legend"
+        android:textSize="8sp"
         app:layout_constraintStart_toEndOf="@+id/disablerb"
         app:layout_constraintTop_toTopOf="@+id/disablerb" />
 
@@ -100,8 +114,9 @@
         android:layout_width="102dp"
         android:layout_height="89dp"
         android:layout_marginStart="44dp"
+        android:fontFamily="@font/heroes_legend"
         android:text="Setter"
-        android:textSize="12sp"
+        android:textSize="8sp"
         app:layout_constraintStart_toEndOf="@+id/protectorb"
         app:layout_constraintTop_toTopOf="@+id/protectorb" />
 
@@ -110,8 +125,9 @@
         android:layout_width="102dp"
         android:layout_height="89dp"
         android:layout_marginStart="128dp"
+        android:fontFamily="@font/heroes_legend"
         android:text="Disabler"
-        android:textSize="12sp"
+        android:textSize="7sp"
         app:layout_constraintStart_toEndOf="@+id/setterb"
         app:layout_constraintTop_toTopOf="@+id/setterb" />
 
@@ -120,7 +136,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:fontFamily="@font/heroes_legend"
         android:text="Choose a character"
+        android:textColor="#FFFFFF"
+        android:textSize="10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.479"
         app:layout_constraintStart_toStartOf="parent"
@@ -131,7 +150,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:fontFamily="@font/heroes_legend"
         android:text="Tank Class"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="@+id/setterb"
         app:layout_constraintHorizontal_bias="0.474"
         app:layout_constraintStart_toStartOf="@+id/protectorb"
@@ -142,7 +164,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:fontFamily="@font/heroes_legend"
         android:text="Mage Class"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="@+id/wizardb"
         app:layout_constraintHorizontal_bias="0.528"
         app:layout_constraintStart_toStartOf="@+id/disablerb"

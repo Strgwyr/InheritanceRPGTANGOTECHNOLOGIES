@@ -4,7 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/dot_bg"
     tools:context=".view.HardCarryFight">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="386dp"
+        android:layout_height="257dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/roshan" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -16,8 +26,11 @@
             android:layout_width="73dp"
             android:layout_height="36dp"
             android:layout_marginBottom="288dp"
+            android:backgroundTint="#FFFFFF"
             android:text="BACK"
-            android:textSize="10sp"
+            android:fontFamily="@font/heroes_legend"
+            android:textColor="#000000"
+            android:textSize="8sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/textView7"
             app:layout_constraintHorizontal_bias="0.523"
@@ -27,8 +40,11 @@
             android:id="@+id/roshanhp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/heroes_legend"
             android:text="TextView"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
             app:layout_constraintEnd_toEndOf="@+id/textView7"
             app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
@@ -38,7 +54,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="Roshan"
-            android:textSize="18sp"
+            android:fontFamily="@font/heroes_legend"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.812"
             app:layout_constraintStart_toStartOf="parent"
@@ -50,7 +68,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="Hardy Carry"
-            android:textSize="18sp"
+            android:fontFamily="@font/heroes_legend"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.154"
             app:layout_constraintStart_toStartOf="parent"
@@ -61,7 +81,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:fontFamily="@font/heroes_legend"
             android:text="TextView"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
             app:layout_constraintEnd_toEndOf="@+id/textView5"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/textView5"
@@ -72,7 +95,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
+            android:fontFamily="@font/heroes_legend"
             android:text="TextView"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
             app:layout_constraintEnd_toEndOf="@+id/heroHp"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/heroHp"
@@ -83,7 +109,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="12dp"
+            android:fontFamily="@font/heroes_legend"
             android:text="HP:"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
             app:layout_constraintEnd_toStartOf="@+id/heroHp"
             app:layout_constraintTop_toTopOf="@+id/heroHp" />
 
@@ -92,7 +121,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
+            android:fontFamily="@font/heroes_legend"
             android:text="TextView"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
             app:layout_constraintEnd_toEndOf="@+id/heroMana"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/heroMana"
@@ -103,7 +135,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
+            android:fontFamily="@font/heroes_legend"
             android:text="MP:"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
             app:layout_constraintStart_toStartOf="@+id/hpheroside"
             app:layout_constraintTop_toBottomOf="@+id/hpheroside" />
 
@@ -113,7 +148,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="108dp"
             android:layout_marginEnd="8dp"
+            android:fontFamily="@font/heroes_legend"
             android:text="Damage:"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
             app:layout_constraintEnd_toStartOf="@+id/herodamage"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -123,8 +161,21 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
             android:text="HP:"
+            android:fontFamily="@font/heroes_legend"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
             app:layout_constraintEnd_toStartOf="@+id/roshanhp"
             app:layout_constraintTop_toTopOf="@+id/roshanhp" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="190dp"
+            android:layout_height="159dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/carry_hard" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
